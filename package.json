@@ -1,0 +1,90 @@
+{
+  "name": "writing-assistant",
+  "version": "1.0.0",
+  "description": "An AI-powered writing assistant built with Electron",
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "NODE_OPTIONS='--trace-warnings' bash scripts/build.sh",
+    "start": "electron .",
+    "dev": "tsc -w",
+    "test": "jest -c jest.config.ts",
+    "test:watch": "jest --watch",
+    "lint": "eslint . --ext .ts,.tsx",
+    "lint:fix": "eslint . --ext .ts,.tsx --fix",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "dependencies": {
+    "@types/styled-components": "^5.1.34",
+    "dotenv": "^16.4.5",
+    "electron": "^33.2.1",
+    "electron-store": "^8.2.0",
+    "highlight.js": "^11.9.0",
+    "keytar": "^7.9.0",
+    "marked": "^12.0.0",
+    "openai": "^4.73.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-markdown": "^9.0.1",
+    "sanitize-html": "^2.12.1",
+    "styled-components": "^6.1.13",
+    "winston": "^3.12.0"
+  },
+  "devDependencies": {
+    "@babel/parser": "^7.x",
+    "@babel/types": "^7.x",
+    "@types/babel__core": "^7.x",
+    "@types/babel__generator": "^7.x",
+    "@types/babel__template": "^7.x",
+    "@types/babel__traverse": "^7.x",
+    "@types/electron": "^1.6.10",
+    "@types/form-data": "^2.x",
+    "@types/jest": "^29.5.14",
+    "@types/keytar": "^4.4.2",
+    "@types/marked": "^5.0.2",
+    "@types/node": "^22.10.1",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@types/sanitize-html": "^2.11.0",
+    "@typescript-eslint/eslint-plugin": "^7.1.1",
+    "@typescript-eslint/parser": "^7.1.1",
+    "electron-builder": "^24.13.3",
+    "electron-rebuild": "^3.2.9",
+    "esbuild": "^0.19.12",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "form-data": "^4.x",
+    "jest": "^29.5.0",
+    "prettier": "^3.2.5",
+    "ts-jest": "^29.1.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2",
+    "undici-types": "^5.x"
+  },
+  "build": {
+    "appId": "com.writing-assistant.app",
+    "mac": {
+      "category": "public.app-category.productivity"
+    },
+    "win": {
+      "target": "nsis"
+    },
+    "linux": {
+      "target": "AppImage"
+    },
+    "files": [
+      "dist/**/*",
+      "package.json"
+    ],
+    "directories": {
+      "output": "release"
+    }
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
