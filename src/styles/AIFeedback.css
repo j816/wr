@@ -1,0 +1,54 @@
+.ai-feedback-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 1rem;
+  background-color: var(--background-color);
+}
+
+.ai-feedback-header {
+  margin-bottom: 1rem;
+}
+
+.ai-feedback-header h2 {
+  margin: 0;
+  color: var(--text-color);
+  font-size: 1.25rem;
+}
+
+.ai-feedback-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1rem;
+  background-color: var(--background-color-secondary);
+  border-radius: 4px;
+}
+
+.ai-feedback-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 1rem;
+}
+
+.ai-feedback-loading p {
+  color: var(--text-color-secondary);
+  margin: 0;
+}
+
+.ai-feedback-display {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.ai-feedback-empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: var(--text-color-secondary);
+  text-align: center;
+  padding: 1rem;
+} 
