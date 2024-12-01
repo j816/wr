@@ -1,0 +1,29 @@
+.errorContainer {
+  padding: 1rem;
+  margin: 1rem;
+  border: 1px solid var(--error-color);
+  border-radius: 4px;
+  background-color: var(--error-bg);
+}
+
+.errorHeading {
+  color: var(--error-color);
+  margin-bottom: 1rem;
+}
+
+.errorMessage {
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+  white-space: pre-wrap;
+}
+
+.errorStack {
+  font-family: monospace;
+  font-size: 0.9em;
+  color: var(--text-secondary);
+  white-space: pre-wrap;
+  background: var(--bg-code);
+  padding: 1rem;
+  border-radius: 4px;
+  overflow-x: auto;
+} 

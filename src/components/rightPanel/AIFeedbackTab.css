@@ -1,0 +1,26 @@
+.ai-feedback-tab {
+  padding: 1rem;
+  height: 100%;
+}
+
+.loading-indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-style: italic;
+}
+
+.feedback-display {
+  overflow-y: auto;
+  height: 100%;
+}
+
+.feedback-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #6c757d;
+  text-align: center;
+} 

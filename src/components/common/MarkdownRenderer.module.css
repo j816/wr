@@ -1,0 +1,63 @@
+.markdownContainer {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+  color: #212529;
+}
+
+.markdownContainer :global(h1),
+.markdownContainer :global(h2),
+.markdownContainer :global(h3),
+.markdownContainer :global(h4),
+.markdownContainer :global(h5),
+.markdownContainer :global(h6) {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.markdownContainer :global(p) {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.markdownContainer :global(ul),
+.markdownContainer :global(ol) {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  padding-left: 2rem;
+}
+
+.markdownContainer :global(code) {
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+  font-size: 0.875em;
+  color: #d63384;
+  background-color: #f8f9fa;
+  padding: 0.2em 0.4em;
+  border-radius: 0.25rem;
+}
+
+.markdownContainer :global(pre) {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-radius: 0.375rem;
+  overflow-x: auto;
+  margin-bottom: 1rem;
+}
+
+.markdownContainer :global(blockquote) {
+  margin: 0 0 1rem;
+  padding: 0.5rem 1rem;
+  border-left: 0.25rem solid #dee2e6;
+  color: #6c757d;
+}
+
+.markdownContainer :global(a) {
+  color: #0d6efd;
+  text-decoration: none;
+}
+
+.markdownContainer :global(a:hover) {
+  color: #0a58ca;
+  text-decoration: underline;
+} 

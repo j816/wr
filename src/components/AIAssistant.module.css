@@ -1,0 +1,128 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 1rem;
+}
+
+.messages {
+  flex: 1;
+  overflow-y: auto;
+  padding-right: 0.5rem;
+  margin-bottom: 1rem;
+  scroll-behavior: smooth;
+}
+
+.message {
+  margin-bottom: 1rem;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  max-width: 80%;
+  position: relative;
+}
+
+.userMessage {
+  background: var(--primary-color);
+  color: white;
+  margin-left: auto;
+  border-bottom-right-radius: 2px;
+}
+
+.assistantMessage {
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  margin-right: auto;
+  border-bottom-left-radius: 2px;
+}
+
+.messageContent {
+  white-space: pre-wrap;
+  word-break: break-word;
+  margin-bottom: 0.5rem;
+}
+
+.messageTimestamp {
+  font-size: 0.75rem;
+  opacity: 0.7;
+  text-align: right;
+}
+
+.loading {
+  text-align: center;
+  color: var(--text-secondary);
+  padding: 1rem;
+  font-style: italic;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 0.6; }
+  50% { opacity: 1; }
+  100% { opacity: 0.6; }
+}
+
+.inputArea {
+  display: flex;
+  gap: 0.5rem;
+  align-items: flex-start;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.input {
+  flex: 1;
+  padding: 0.75rem;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  resize: vertical;
+  min-height: 2.5rem;
+  max-height: 10rem;
+  background: var(--bg-input);
+  color: var(--text-primary);
+  font-family: inherit;
+  line-height: 1.5;
+  transition: border-color 0.2s;
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+.input:disabled {
+  background: var(--bg-disabled);
+  cursor: not-allowed;
+}
+
+.sendButton,
+.clearButton {
+  padding: 0.75rem 1.25rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  white-space: nowrap;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.sendButton {
+  background: var(--primary-color);
+  color: white;
+}
+
+.clearButton {
+  background: var(--danger-color);
+  color: white;
+}
+
+.sendButton:hover:not(:disabled),
+.clearButton:hover:not(:disabled) {
+  transform: translateY(-1px);
+}
+
+.sendButton:disabled,
+.clearButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+} 

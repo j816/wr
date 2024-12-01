@@ -1,0 +1,23 @@
+.settingsContainer {
+  padding: 1rem;
+}
+
+.apiKeyInputContainer,
+.apiKeyStatus {
+  margin-top: 1rem;
+}
+
+.apiKeyInputContainer label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.apiKeyInputContainer input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+} 

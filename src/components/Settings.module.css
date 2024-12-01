@@ -1,0 +1,16 @@
+.container {
+  padding: 1rem;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.title {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border-color);
+  color: var(--text-primary);
+}
+
+.section {
+  margin-bottom: 2rem;
+} 

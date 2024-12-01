@@ -1,0 +1,22 @@
+.container {
+  padding: 1rem;
+  background: var(--bg-secondary);
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.title {
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.content {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  white-space: pre-wrap;
+}
+
+.empty {
+  color: var(--text-secondary);
+  font-style: italic;
+} 

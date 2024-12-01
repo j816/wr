@@ -1,0 +1,21 @@
+.criteria-tab {
+  padding: 1rem;
+}
+
+.criteria-tab button {
+  margin-bottom: 0.5rem;
+}
+
+.dropdowns {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.criteria-display {
+  overflow-y: auto;
+  max-height: 400px;
+  background-color: #f8f9fa;
+  padding: 0.5rem;
+  border: 1px solid #dee2e6;
+} 
